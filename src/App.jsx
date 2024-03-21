@@ -60,7 +60,7 @@ function App() {
     return; // Exit the function early if either field is empty
   }
 
-  console.log(`Name: ${nameText}, Desc: ${descText}\n`)
+  //console.log(`Name: ${nameText}, Desc: ${descText}\n`)
     // Create a new todo object
     const newTodo = {
       name: nameText,
@@ -84,19 +84,19 @@ function App() {
 
           <div className="text-center">
             <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-todo-list/check1.webp" alt="Check" width="60" />
-            <h2>Task List</h2>
+            <h2>ToDo Task List</h2>
           </div>
 
           <form>
             <div className="form-group row">
               <div className="col">
-                <input type="text" className="form-control" placeholder="Todo Name" value={nameText} onChange={handleNameChange} />
+                <input type="text" className="form-control" placeholder="ToDo Name" value={nameText} onChange={handleNameChange} />
               </div>
               <div className="col">
-                <input type="text" className="form-control" placeholder="Todo Description" value={descText} onChange={handleDescChange} />
+                <input type="text" className="form-control" placeholder="ToDo Description" value={descText} onChange={handleDescChange} />
               </div>
               <div className="col-auto">
-                <button type="button" className="btn btn-warning" onClick={addTodo}>Add Todo</button>
+                <button type="button" className="btn btn-warning" onClick={addTodo}>Add ToDo</button>
               </div>
             </div>
           </form>
@@ -105,7 +105,7 @@ function App() {
             <div className="container">
               <div className="row row-cols-auto">
                 <div className="col-md-11">
-                  <h3>My Todos</h3>
+                  <h3>My ToDo's</h3>
                 </div>
                 <div className="col-md-1">
                   {/* <!-- Example single danger button --> */}
