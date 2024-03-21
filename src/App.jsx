@@ -33,6 +33,7 @@ function App() {
   }
 
   const editTodo = (todoName, todoDesc, todoid) => {
+
     setNameValue(todoName);
     setDescValue(todoDesc);
     //    console.log(todoid);
@@ -54,6 +55,12 @@ function App() {
 
   // Event handler function to add a new todo
   const addTodo = () => {
+   if (!nameText || !descText) {
+    alert('Please fill in both Name and Description fields.');
+    return; // Exit the function early if either field is empty
+  }
+
+  console.log(`Name: ${nameText}, Desc: ${descText}\n`)
     // Create a new todo object
     const newTodo = {
       name: nameText,
